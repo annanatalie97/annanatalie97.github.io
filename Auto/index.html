@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  charset="utf-8">
+<title>Nissan</title>
+<link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+	    <div id="header"><img src="images/e1.jpg"  alt="Шапка" /></div>
+		
+		<div id="content">
+		
+		<div id="nav">
+	    <ul>
+		<li><a title="На главную" href="index.html"><img src="images/header.jpg" alt="Логотип"></a></li>
+		<li><a href="350Z.html" title="Nissan 350Z">Nissan 350Z</a></li>
+		<li><a href="pathfinder.html" title="Nissan Pathfinder">Nissan Pathfinder</a></li>
+		<li><a href="murano.html" title="Nissan Murano">Nissan Murano</a></li>
+		</ul>
+		<div id="map"><img src="images/4.png"  alt="Map"></div>
+		</div>
+		
+		<div id="main"></div>
+		<table border="1px solid black">
+		<tr>
+		<th  id="main_title" colspan="3"><h1>Главная</h1></th>
+		</tr>
+		<tr>
+		<td class="small_card">
+		<img src="images/foto1_1.jpg" alt="Nissan 350z">
+		<small>Спорткар</small>
+		<h2>Nissan 350Z</h2>
+		<p>Nissan 350Z — спортивный автомобиль, выпускаемый корпорацией Nissan Motor Co. 350Z — пятое поколение автомобилей Nissan серии Z, начиная с Datsun 240Z 1969 года. </p>
+		<a href="350Z.html" title="News">Перейти</a>
+		</td>
+		
+		<td class="small_card">
+		<img src="images/foto1_10.jpg" alt="Nissan Pathfinder">
+		<small>Среднеразмерный внедорожник </small>
+		<h2>Nissan Pathfinder</h2>
+		<p>Nissan Pathfinder — полноразмерный кроссовер японской компании Nissan, производство тогда ещё внедорожника, началось в 1985 году. У автомобиля существует четыре поколения. В современной линейке автомобилей Nissan, Pathfinder по размеру занимает место между Murano и Armada или Patrol.</p>
+		<a href="pathfinder.html" title="Contacts">Перейти</a>
+		</td>
+		
+		<td class="small_card">
+		<img src="images/foto1_17.jpg" alt="Nissan Murano">
+		<small>Среднеразмерный кроссовер</small>
+		<h2>Nissan Murano</h2>
+		<p>Nissan Murano — среднеразмерный кроссовер японской компании Nissan, выпускающийся с 2002 года. Автомобиль разработан Nissan Design America из Ла-Хойя (Сан-Диего, Калифорния). Назван в честь одного из островов в Италии - Мурано. В 2010 году в США была представлена версия кабриолет. </p>
+		<a href="murano.html" title="About">Перейти</a>
+		</td>
+		</tr>
+		<tr>
+		<td  class="big_card"colspan="3">
+		<img src="images/form1.jpg" alt="Форма">
+		<form action="/Home/Order" method="post">
+		<fieldset>
+		<legend>Оформление заказа</legend>
+		<input type="text" name="Name" placeholder="Введите ваше имя" required /><br />
+		<input type="tel" name="Tel" placeholder="8-(xxx)-(xxx)-(xxxx)" required patern="8-[0-9]{3}
+		-[0-9]{3}-[0-9]{4}"/><br />
+		<select name="Car">
+		<option value="Nissan 350Z">Nissan 350Z</option>
+		<option value="Nissan Pathfinder">Nissan Pathfinder</option>
+		<option value="Nissan Murano">Nissan Murano</option>
+		</select><br />
+		<input type="submit" />
+		</fieldset>
+		</form>
+		
+		</td>
+		</tr>
+		</table>
+		</div>
+		
+		<div id="footer"><h2>Copypite</h2></div>
+
+
+	</div>
+</body>
+</html>

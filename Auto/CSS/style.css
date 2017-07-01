@@ -1,0 +1,188 @@
+/*Сетка*/
+body {
+	background-color:#ccc;  /*цвет фона*/
+}
+#wrapper {
+	width:1100px; /*ширина*/
+	height:auto; /*высота*/
+	margin:auto; /*внешний отступ, наш блок выровняется по середине экрана*/
+	background-color:#2F4F4F;
+}
+#header {
+	width:100%; /*ширина*/
+	height:auto;
+}
+#header img{
+	width:100%; 
+	border-bottom:5px solid #4B0082;
+}
+#content {
+	width:80%;
+	height:auto;
+	margin:0 10%; /*внешний отступ*/
+}
+#nav {
+	width:200px;
+	height:677px;
+	float:left; /*обтекание*/
+	margin-top:20px;
+}
+#nav ul{
+	height:515px;
+}
+#nav img {
+	width:100%;
+	height:100%;
+}
+#map{
+	width:200px;
+	height:125px;
+	margin-top:20px;
+}
+#map img {
+	width:100%;
+	height:100%;
+}
+#main{
+	float:right; /*обтекание*/
+	width:calc(100% - 200px);
+}
+#footer{
+	width:78%;
+	margin:0 10%;
+	height:37px;
+	padding-top:20px; /*внутренний отступ*/
+	clear:both; /*обтекание выключить*/
+}
+/*Фон*/
+#nav ul,#footer,#main_title,.small_card,.big_card {
+	background-color:white;
+}
+/*Навигация*/
+ul {
+	padding:0;
+	margin:0;
+}
+ul li {
+	list-style:none; /*отключим маркер*/
+}
+ul li:nth-child(n+2){
+	padding:20px;/*внутри списка применяем к элементам начиная со второго */
+}
+ul li:nth-child(n+2):hover {
+	background-color:rgba(0,0,0,0.1); /*изменение при наведении*/
+}
+/*Ссылки*/
+a, a:visited {
+	color:black;
+	text-decoration:none; /*выключить подчеркивание*/
+}
+table a {
+	padding-left:27px; /*отступ слева*/
+	width:auto;
+	background-image: url("../images/Button.jpg"); /*вставляем изображение кнопки*/
+	background-repeat:no-repeat; /*картинка не повторялась*/
+	background-position:5px; /*позиция*/
+	background-size:17px 17px; /*размер изображения*/
+}
+/*Текст*/
+*{
+    font-family: 'Trebuchet MS', Helvetica, sans-serif; /*правило применимо ко всем тегам*/
+}
+h1 {
+	padding-left:20px; /* отступ слева*/
+}
+h2 {
+	margin-top:0; /*убрать отступ сверху*/
+}
+small {
+	color:#227dab;
+	font-weight:bold; /*полу-жирный текст*/
+	font-size:60%; /*размера*/ 
+}
+#footer{
+	font-size:18px;
+	font-weight:bold;
+    text-align:center; /*выравнивание текста по центру*/
+}
+p {
+	height:100px;
+	overflow:hidden; /*если больше 100px то будем скрывать текст*/
+	text-overflow:clip;
+}
+/*Таблица*/
+table {
+	border-spacing:20px; /*отступы между ячейками*/
+	border-collapse: inherit;
+    padding-top: 0;
+    margin-top: 0;
+    border: 0;
+
+}
+td,th{
+    border: none; /*убрать */
+}
+.small_card {
+	width:200px;
+	border-bottom:5px solid #4B0082; /*рамка снизу*/
+	padding:0;
+	margin:0;
+}
+.small_card .content
+{
+    padding: 20px;
+}
+.small_card img {
+	width:100%;
+	height:100%;
+}
+/*Формы*/
+.big_card {
+	padding-top: 0;
+    margin-top: 0;
+}
+.big_card img {
+	width:400px;
+	float:left;
+}
+form {
+	width:calc (100% - 400px);
+	float:right;
+}
+fieldset {
+	border:none;
+	padding:0 20px;
+}
+legend {
+	font-size:16px;
+	font-weight:bold;
+	padding:20px 0;
+}
+input,select {
+	padding-left:20px;
+	background-color:#ececec;
+    border-style: none;
+    height: 30px;
+	margin-bottom: 10px;
+    width: calc(100% - 20px);
+}
+select {
+	width:100%;
+}
+input[type=submit]{
+	color:white;
+	background-color:#4B0082;
+	width:auto;
+	border:none;
+	margin:0;
+	padding-left:27px;
+	background-image: url("../images/Button-2.jpg");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-size: 17px 17px;
+}
+/*Дополнит страницы*/
+.big_pic img,.small_pic img{
+    width: 100%;
+}
+
